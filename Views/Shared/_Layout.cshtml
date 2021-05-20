@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sito Mattia Zaghini</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/html5up-read-only/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+			 <ul class="navbar-nav">
+                <li><a class="nav-link text-dark active" asp-area="" asp-controller="Account" asp-action="Login">Accedi</a></li>
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Registra">Registrati </a></li>
+				<li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Privacy" >Privacy </a></li>
+				<li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Prenota" >Prenota </a></li>
+				<li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Upload" >Upload </a></li>
+				<li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Elenco">Elenco</a></li>
+				<li><a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="LogOut">LogOut</a></li>
+			</ul>
+        </div>
+        </nav>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="/html5up-read-only/images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Mattia Zaghini</a></h1>
+					<p>Seconda Web, il sequel del famoso PrimaWeb che ha fatto appassionare decine di studenti<br /></p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">Home</a></li>
+						<li><a href="#two">Cosa puoi prenotare</a></li>
+						<li><a href="#three">Alcune immagini che puoi prenotare</a></li>
+						<li><a href="#four">Contattami</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://github.com/mattiazaghini/SecondaWeb.git" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href=https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRlRQbhKcTswGxRKLTcLPJhqCFnrmvmcCcRjmqXDXVlsWgstBCLRDXWcJMNXDRlHbwjGskg class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+						@RenderBody()
+					</div>
+				<!-- Footer -->
+					<section id="footer"></section> 
+			</div>
+
+		<!-- Scripts -->
+			<script src="/html5up-read-only/assets/js/jquery.min.js"></script>
+			<script src="/html5up-read-only/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/html5up-read-only/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/html5up-read-only/assets/js/browser.min.js"></script>
+			<script src="/html5up-read-only/assets/js/breakpoints.min.js"></script>
+			<script src="/html5up-read-only/assets/js/util.js"></script>
+			<script src="/html5up-read-only/assets/js/main.js"></script>
+	</body>
+</html>
