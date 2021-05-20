@@ -74,7 +74,6 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Controllers
             {
                 return NotFound();                
             }
-            
         }
 
         [HttpPost]
@@ -88,9 +87,7 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Controllers
                 vecchio.Email=nuovo.Email;
                 db.Prenotazioni.Update(vecchio);
                 db.SaveChanges();
-                //return View("Grazie",db);
             }
-            //return NotFound();
             return View("Elenco",db);
         }
 
@@ -98,9 +95,6 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Controllers
         {   
             var db=new DBContext();
             db.RemoveRange(db.Prenotazioni);
-            
-            //Prenotazione prenotazione = db.Prenotazioni.Find(id);
-            //db.Remove(prenotazione);
             db.SaveChanges();
             return View("Elenco",db);
         }      
@@ -116,9 +110,7 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Controllers
             
             if(!fin.EndOfStream)
             {
-                /*PrenotazioneContext db=new PrenotazioneContext();
-                string riga=fin.ReadLine();*/
-                var db=new DBContext(); //oppure PrenotazioneContext db=new PrenotazioneContext(); 
+                var db=new DBContext(); 
                 string riga = fin.ReadLine();
                 while(!fin.EndOfStream)
                 {
@@ -130,8 +122,6 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Controllers
 
                 db.SaveChanges();
                 return View("Elenco", db);    
-                //return View("Grazie", db);
-                ///return View("Grazie" , db.Prenotazioni);
             }
             return View();
         }

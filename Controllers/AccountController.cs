@@ -107,13 +107,5 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Controllers
                 var db=new DBContext();
                 return View("~/Views/Home/Elenco.cshtml",db);
         }
-/*
-        [Authorize]
-        [HttpGet]
-        public IActionResult Prenota()
-        {
-            return View();
-        }
-        */
     }
 }
