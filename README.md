@@ -1,4 +1,3 @@
-
 # SecondaWeb
 *Questo sito web è stato realizzato usando ASP.NET 5.0 dalla classe 5H dell'itts di Rimini.*
 

@@ -142,7 +142,7 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Controllers
             return View ();
         }
 
-        
+        [Authorize]
         [HttpGet]
         public IActionResult Prenota()
         {

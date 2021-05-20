@@ -7,7 +7,5 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Models
     {
         public IFormFile MyCSV {get;set;}
         public string Descrizione { get; set; }
-
-     
     }
 }

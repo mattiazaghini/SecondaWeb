@@ -2,7 +2,6 @@
 @{
     ViewData["Title"] = "Login";
 }
-
 <h1>Login</h1>
 
 <div class="row">
@@ -26,11 +25,8 @@
                     <input asp-for="RememberMe" type="checkbox" class="custom-control-input">
                     <label class="custom-control-label" asp-for="RememberMe">@Html.DisplayNameFor(m => m.RememberMe)</label>
                 </div>
-
             </div>
             <button type="submit" class="btn-primary">Login</button>
         </form>
-
     </div>
 </div>
-

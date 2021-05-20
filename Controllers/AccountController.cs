@@ -14,11 +14,8 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Controllers
 {
     public class AccountController : Controller
     {
-        //private readonly ILogger<AccountController> _logger;
-
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
-
         public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
         {
             _userManager = userManager;
@@ -110,14 +107,13 @@ namespace Zaghini.Mattia._5H.SecondaWeb.Controllers
                 var db=new DBContext();
                 return View("~/Views/Home/Elenco.cshtml",db);
         }
-
+/*
         [Authorize]
         [HttpGet]
         public IActionResult Prenota()
         {
-           
-                return View("~/Views/Home/Prenota.cshtml");
-      
+            return View();
         }
+        */
     }
 }

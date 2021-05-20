@@ -3,7 +3,6 @@ using System;
 namespace Zaghini.Mattia._5H.SecondaWeb.Models
 {
    public class Prenotazione{
-
        public int PrenotazioneId { get; set; } 
        public string Nome { get; set; }
        public string Email { get; set; }
